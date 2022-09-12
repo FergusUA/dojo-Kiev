@@ -41,3 +41,15 @@ for (let anchor of anchors) {
     });
   });
 }
+
+// change img
+
+var counter = 1,
+    gallery = ["./css/img/traineeThree.jpg", "./css/img/traineeTwo.jpg", "./css/img/traineeOne.jpg"],
+    changeImage = function () {
+        document.getElementById("traineeImg").src = gallery[counter];
+        counter++;
+        if (counter >= gallery.length) {
+            counter = 0;
+        }
+    };
